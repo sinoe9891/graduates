@@ -41,9 +41,14 @@
         <td align="centered">'.$suma.'</td>
         </tr>
         ';}
-     echo '<td align="centered"><strong>TOTAL</strong></td>
-        <td><strong>'.$sumatotalf.'</strong></td>
-        <td><strong>'.$sumatotalm.'</strong></td>
-        <td><strong>'.$totalgraduados.'</strong></td>
+     echo '
+        <thead>
+        <tr>
+          <th align="centered"><strong>TOTAL</strong></th>
+          <th align="centered"><strong>'.$sumatotalf.'</strong></th>
+          <th align="centered"><strong>'.$sumatotalm.'</strong></th>
+          <th align="centered"><strong>'.$totalgraduados.'</strong></th>
+        </tr>
+          </thead>
   </tr></table></tbody>';
 ?>
