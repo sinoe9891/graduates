@@ -6,7 +6,7 @@
       $resultado = $mysqli->query($busqueda);
 
         echo '
-         <table class="centered">
+         <table class="striped centered">
           <thead>
             <tr>
                 <th>PAÍS</th>
@@ -35,13 +35,13 @@
           $totalgraduados=$totalgraduados+$f['Femenino']+$f['Masculino'];
     echo '
         <tr>
-        <td align="left">'.$f['nacionalidad'].'</td>
-        <td align="left">'.$sumaHombre.'</td>
-        <td align="left">'.$sumaMujeres.'</td>
-        <td align="left">'.$suma.'</td>
+        <td align="centered" >'.$f['nacionalidad'].'</td>
+        <td align="centered">'.$sumaHombre.'</td>
+        <td align="centered">'.$sumaMujeres.'</td>
+        <td align="centered">'.$suma.'</td>
         </tr>
         ';}
-     echo '<td align="left"><strong>TOTAL</strong></td>
+     echo '<td align="centered"><strong>TOTAL</strong></td>
         <td><strong>'.$sumatotalf.'</strong></td>
         <td><strong>'.$sumatotalm.'</strong></td>
         <td><strong>'.$totalgraduados.'</strong></td>
