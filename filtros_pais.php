@@ -1,7 +1,14 @@
 <?php
 			require("includes/conexion.php");
 
-      $busqueda="select nacionalidad, sum(case when genero like '%F%' then 1 else 0 end) as Femenino, sum(case when genero like '%M%' then 1 else 0 end) as Masculino, count('%M%'+'%F%') as Total from graduat3s where genero like '%F%' OR genero like '%M%' group by nacionalidad ORDER BY nacionalidad ASC";
+      $busqueda="select nacionalidad,
+			sum(case when genero like '%F%' then 1 else 0 end) as Femenino,
+			sum(case when genero like '%M%' then 1 else 0 end) as Masculino,
+			count('%M%'+'%F%') as Total
+			from graduat3s
+			where genero like '%F%' OR genero like '%M%'
+			group by nacionalidad
+			ORDER BY nacionalidad ASC";
 
       $resultado = $mysqli->query($busqueda);
 
