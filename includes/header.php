@@ -54,6 +54,21 @@
              font: inherit;
              vertical-align: baseline;
          }
+         td, th {
+              padding: 3px 5px;
+              display: table-cell;
+              text-align: left;
+              vertical-align: middle;
+              border-radius: 2px;
+          }
+          .row .col.s8 {
+              width: 50%;
+              margin-left: auto;
+              left: auto;
+              right: auto;
+              display: flex;
+              justify-content: center;
+          }
 
     </style>
     <!-- Footer -->

@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s2"><p></p></div>
+          <div class="col s3"><p></p></div>
           <div class="col s8"><?php require("filtros_pais.php");?></div>
         </div>
         </div>
