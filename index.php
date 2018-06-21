@@ -25,6 +25,8 @@
       </main>
         <?php require_once('includes/footer.php'); ?>
   </body>
+  <a href="#0" class="cd-top js-cd-top">Top</a>
+  <script src="includes/back-to-top/back-to-top.js"></script>
   </html>
 
 
