@@ -15,6 +15,7 @@
           </div>
         </div>
         <div class="row">
+
           <div class="col s3"><p></p></div>
           <div class="col s8"><?php require("filtros_pais.php");?></div>
         </div>
@@ -28,10 +29,3 @@
   <a href="#0" class="cd-top js-cd-top">Top</a>
   <script src="includes/back-to-top/back-to-top.js"></script>
   </html>
-
-
-
-
-  <!--
-
-  `ID`, `codigo`, `nombres`, `apellidos`, `nacionalidad`, `genero`, `programa`  `orientacion`  `dia_graduacion`, `mes_graduacion`, `estatus`, `lugar_pasantia`, `exp_pasantia`, `area_investigacion`, `asesor_tesis`, `url_pasantia`, `titulo`, `pa`, `fecha_nacimiento`, `financiado_por`, `direccion`, `email`, `telefono`, `movil`, -->
