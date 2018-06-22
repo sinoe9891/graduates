@@ -33,7 +33,8 @@
       $sumatotalm=0;
       $sumatotalf=0;
 			$img='';
-      while($f=$resultado->fetch_assoc()){
+      $numero_paises = 0;
+			while($f=$resultado->fetch_assoc()){
 					$sumaHombre=$f['Masculino'];
 					$sumaMujeres=$f['Femenino'];
           $suma=$f['Total'];
@@ -47,6 +48,7 @@
 						 }if ($f['nacionalidad']=='CANADÁ') {
 							 $img="img/paises/CANADA.png";
 						 }
+						 $numero_paises ++;
 						// if (file_exists("img/paises/".$f['nacionalidad'].".png")) {
 	          //   $img="img/paises/".$f['nacionalidad'].".png";
 	          // }elseif(!file_exists("img/profile_pictures/".$f['nacionalidad'].".jpg"))
@@ -62,10 +64,10 @@
     echo '
 		</div>
         <tr>
-        <td align="centered" style="text-align: left; font-size:12px;"><img alt="" class="banderas" src="'.$img.'" style="width: 15px;"><font style="text-transform: capitalize;"> '.$f['nacionalidad'].'</font></td>
+        <td align="centered" style="text-align: left; font-size:12px;"><strong>'.$numero_paises.'-</strong> <img alt="" class="banderas" src="'.$img.'" style="width: 15px;"><font style="text-transform: capitalize;"> '.$f['nacionalidad'].'</font></td>
         <td align="centered">'.$sumaHombre.'</td>
         <td align="centered">'.$sumaMujeres.'</td>
-        <td align="centered">'.$suma.'</td>
+        <td align="centered"><strong>'.$suma.'</strong></td>
         </tr>
         ';}
      echo '

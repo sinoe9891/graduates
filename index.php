@@ -11,7 +11,7 @@
           <div align="center" class="col s12 m12 l12">
             <p></p>
             <h5><strong><?php if(isset($_SESSION['perfiles_user']) ){echo "Busqueda avanzada: Usuario: ".$_SESSION['perfiles_user'];}?></strong></h5>
-            <h5 id="error">Cantidad de Graduados</h5>
+            <h5 id="error">Cantidad Total de</br> Graduados</h5>
           </div>
         </div>
         <div class="row">
