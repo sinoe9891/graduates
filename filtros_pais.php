@@ -48,12 +48,10 @@
             $img="img/paises/".$f['nacionalidad'].".png";
           }elseif(!file_exists("img/profile_pictures/".$f['nacionalidad'].".jpg"))
             {
-               if($f['nacionalidad']=='ALEMANIA') {
-                  $img="img/paises/alemania.png";
-                }if ($f['nacionalidad']=='BRASIL') {
-                  $img="img/paises/brasil.png";
-                }if ($f['nacionalidad']=='ARGENTINA') {
-                  $img="img/paises/argentina.png";
+               if($f['nacionalidad']=='ESPAÑA') {
+                  $img="img/paises/espana.png";
+                }if ($f['nacionalidad']=='CANADÁ') {
+                  $img="img/paises/canada.png";
                 }
             }
     echo '
