@@ -44,20 +44,28 @@
           $sumatotalf=$sumatotalf+$f['Femenino'];
           $totalgraduados=$totalgraduados+$f['Femenino']+$f['Masculino'];
 
-					if (file_exists("img/paises/".$f['nacionalidad'].".png")) {
-            $img="img/paises/".$f['nacionalidad'].".png";
-          }elseif(!file_exists("img/profile_pictures/".$f['nacionalidad'].".jpg"))
-            {
-               if($f['nacionalidad']=='ESPAÑA') {
-                  $img="img/paises/espana.png";
-                }if ($f['nacionalidad']=='CANADÁ') {
-                  $img="img/paises/canada.png";
-                }
-            }
+						$img="img/paises/".$f['nacionalidad'].".png";
+						if($f['nacionalidad']=='ESPAÑA') {
+							 $img="img/paises/espana.png";
+						 }if ($f['nacionalidad']=='CANADÁ') {
+							 $img="img/paises/canada.png";
+						 }
+						// if (file_exists("img/paises/".$f['nacionalidad'].".png")) {
+	          //   $img="img/paises/".$f['nacionalidad'].".png";
+	          // }elseif(!file_exists("img/profile_pictures/".$f['nacionalidad'].".jpg"))
+	          //   {
+	          //      if($f['nacionalidad']=='ALEMANIA') {
+	          //         $img="img/paises/alemania.png";
+	          //       }if ($f['nacionalidad']=='BRASIL') {
+	          //         $img="img/paises/brasil.png";
+	          //       }if ($f['nacionalidad']=='ARGENTINA') {
+	          //         $img="img/paises/argentina.png";
+	          //       }
+	          //   }
     echo '
 		</div>
         <tr>
-        <td align="centered" ><img alt="" class="banderas" src="'.$img.'" style="width: 15px;">'.$f['nacionalidad'].'</td>
+        <td align="centered" style="text-align: left;"><img alt="" class="banderas" src="'.$img.'" style="width: 15px;">'.$f['nacionalidad'].'</td>
         <td align="centered">'.$sumaHombre.'</td>
         <td align="centered">'.$sumaMujeres.'</td>
         <td align="centered">'.$suma.'</td>
