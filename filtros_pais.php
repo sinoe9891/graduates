@@ -15,11 +15,11 @@
 			echo '
 			 <table class="striped centered">
 				<thead>
-					<tr style="background:#c9c9c9;">
-							<th>PAÍS</th>
-							<th>FEMENINO</th>
-							<th>MASCULINO</th>
-							<th>TOTAL</th>
+					<tr style="background:#c9c9c9;font-size: 12px;">
+							<th style="width:30%">PAÍS</th>
+							<th style="width:25%">FEMENINO</th>
+							<th style="width:25%">MASCULINO</th>
+							<th style="width:20%">TOTAL</th>
 					</tr>
 					<tr>
 				</thead>
@@ -65,7 +65,7 @@
     echo '
 		</div>
         <tr>
-        <td align="centered" style="text-align: left;"><img alt="" class="banderas" src="'.$img.'" style="width: 15px;">'.$f['nacionalidad'].'</td>
+        <td align="centered" style="text-align: left; font-size:12px;"><img alt="" class="banderas" src="'.$img.'" style="width: 15px;">'.$f['nacionalidad'].'</td>
         <td align="centered">'.$sumaHombre.'</td>
         <td align="centered">'.$sumaMujeres.'</td>
         <td align="centered">'.$suma.'</td>
