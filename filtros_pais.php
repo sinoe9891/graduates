@@ -17,8 +17,8 @@
 				<thead>
 					<tr style="background:#c9c9c9;font-size: 12px;">
 							<th style="width:30%">PAÍS</th>
-							<th style="width:25%">FEMENINO</th>
-							<th style="width:25%">MASCULINO</th>
+							<th style="width:23%">FEMENINO</th>
+							<th style="width:23%">MASCULINO</th>
 							<th style="width:20%">TOTAL</th>
 					</tr>
 					<tr>
@@ -26,10 +26,7 @@
 				<tbody>
 				 ';
         ?>
-
       <?php
-
-
       echo '<div class=" ">
             <div class="row">';
       $totalgraduados=0;
@@ -46,9 +43,9 @@
 
 						$img="img/paises/".$f['nacionalidad'].".png";
 						if($f['nacionalidad']=='ESPAÑA') {
-							 $img="img/paises/espana.png";
+							 $img="img/paises/ESPANA.png";
 						 }if ($f['nacionalidad']=='CANADÁ') {
-							 $img="img/paises/canada.png";
+							 $img="img/paises/CANADA.png";
 						 }
 						// if (file_exists("img/paises/".$f['nacionalidad'].".png")) {
 	          //   $img="img/paises/".$f['nacionalidad'].".png";
@@ -65,7 +62,7 @@
     echo '
 		</div>
         <tr>
-        <td align="centered" style="text-align: left; font-size:12px;"><img alt="" class="banderas" src="'.$img.'" style="width: 15px;">'.$f['nacionalidad'].'</td>
+        <td align="centered" style="text-align: left; font-size:12px;"><img alt="" class="banderas" src="'.$img.'" style="width: 15px;"><font style="text-transform: capitalize;"> '.$f['nacionalidad'].'</font></td>
         <td align="centered">'.$sumaHombre.'</td>
         <td align="centered">'.$sumaMujeres.'</td>
         <td align="centered">'.$suma.'</td>
