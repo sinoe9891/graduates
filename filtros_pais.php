@@ -49,24 +49,13 @@
 							 $img="img/paises/CANADA.png";
 						 }
 						 $numero_paises ++;
-						// if (file_exists("img/paises/".$f['nacionalidad'].".png")) {
-	          //   $img="img/paises/".$f['nacionalidad'].".png";
-	          // }elseif(!file_exists("img/profile_pictures/".$f['nacionalidad'].".jpg"))
-	          //   {
-	          //      if($f['nacionalidad']=='ALEMANIA') {
-	          //         $img="img/paises/alemania.png";
-	          //       }if ($f['nacionalidad']=='BRASIL') {
-	          //         $img="img/paises/brasil.png";
-	          //       }if ($f['nacionalidad']=='ARGENTINA') {
-	          //         $img="img/paises/argentina.png";
-	          //       }
-	          //   }
+
     echo '
 		</div>
         <tr>
         <td align="centered" style="text-align: left; font-size:12px;"><strong>'.$numero_paises.'-</strong> <img alt="" class="banderas" src="'.$img.'" style="width: 15px;"><font style="text-transform: capitalize;"> '.$f['nacionalidad'].'</font></td>
+				<td align="centered">'.$sumaMujeres.'</td>
         <td align="centered">'.$sumaHombre.'</td>
-        <td align="centered">'.$sumaMujeres.'</td>
         <td align="centered"><strong>'.$suma.'</strong></td>
         </tr>
         ';}
